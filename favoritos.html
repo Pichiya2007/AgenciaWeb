@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contactos</title>
+    <title>Favoritos</title>
     <script
         src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
+
 <body>
     <nav class="bg-gray-800">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -36,10 +37,10 @@
                     </div>
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
-                            <a href="/contactos.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                            <a href="/contactos.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                                 aria-current="page">Lista de Contactos</a>
                             <a href="/favoritos.html"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Favoritos</a>
+                                class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Favoritos</a>
                             <a href="#"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Lista
                                 de Pendientes</a>
@@ -58,7 +59,7 @@
                         </svg>
                     </button>
                     <div class="relative ml-3">
-                        <a href="/contactos/contacto1.html">
+                        <div>
                             <button type="button"
                                 class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                                 id="user-menu-button" aria-expanded="false" aria-haspopup="true">
@@ -66,9 +67,9 @@
                                 <span class="sr-only">Open user menu</span>
                                 <img class="size-8 rounded-full"
                                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0f0gLIJLLt5JAKSmrj55q2M1ZJ5XK2BFj4MyOsbFoTtjNkN75rBLwMeMLIFAcgIQg01E&usqp=CAU"
-                                    alt="Imagen de perfil" />
+                                    alt="">
                             </button>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,50 +156,8 @@
                             del contacto</button>
                     </td>
                 </tr>
-                <tr
-                    class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Shagy Blon
-                    </th>
-                    <td class="px-6 py-4">
-                        Rogers García
-                    </td>
-                    <td class="px-6 py-4">
-                        1213-0344
-                    </td>
-                    <td class="px-6 py-4">
-                        Cazador de Fantasmas
-                    </td>
-                    <td class="px-6 py-4">
-                        <button type="button" onclick="location.href = '/contactos/contacto4.html'"
-                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Detalles
-                            del contacto</button>
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                        Werner José
-                    </th>
-                    <td class="px-6 py-4">
-                        Paredes Paniagua
-                    </td>
-                    <td class="px-6 py-4">
-                        1112-2355
-                    </td>
-                    <td class="px-6 py-4">
-                        Pitufo-Minion
-                    </td>
-                    <td class="px-6 py-4">
-                        <button type="button" onclick="location.href = '/contactos/contacto5.html'"
-                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Detalles
-                            del contacto</button>
-                    </td>
-                </tr>
             </tbody>
         </table>
-    </div>
-    <div class="mt-6 flex justify-center">
-        <button type="button" onclick="location.href = '/formContacto.html'" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Agregar</button>
     </div>
 </body>
 </html>
