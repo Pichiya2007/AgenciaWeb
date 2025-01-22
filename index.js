@@ -5,8 +5,8 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 });
 
 function recibirDatos(){
-    let correo = document.getElementById("correo").value
-    let contrasenia = document.getElementById("contrasenia").value
+    const correo = document.getElementById("correo").value
+    const contrasenia = document.getElementById("contrasenia").value
 
     localStorage.setItem("correo", correo);
     localStorage.setItem("contrasenia", contrasenia);
