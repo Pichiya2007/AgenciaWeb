@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script
-        src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <title>Lista de Pendientes</title>
 </head>
-
 <body>
     <nav class="bg-gray-800">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -18,7 +15,7 @@
                         class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                         aria-controls="mobile-menu" aria-expanded="false">
                         <span class="absolute -inset-0.5"></span>
-                        <span class="sr-only">Open main menu</span>
+                        <span class="sr-only"></span>
                         <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" aria-hidden="true" data-slot="icon">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -34,7 +31,7 @@
                     <div class="flex shrink-0 items-center">
                         <img class="h-8 w-auto"
                             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Logo_Tigo.svg/1200px-Logo_Tigo.svg.png"
-                            alt="Your Company">
+                            alt="Tigo dame mejor señal por favor"/>
                     </div>
                     <div class="hidden sm:ml-6 sm:block">
                         <div class="flex space-x-4">
@@ -43,8 +40,7 @@
                                 aria-current="page">Lista de Contactos</a>
                             <a href="/favoritos.html"
                                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Favoritos</a>
-                            <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Lista
-                                de Pendientes</a>
+                            <a href="/listaPendientes.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white">Lista de Pendientes</a>
                         </div>
                     </div>
                 </div>
@@ -52,7 +48,7 @@
                     <button type="button"
                         class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                         <span class="absolute -inset-1.5"></span>
-                        <span class="sr-only">View notifications</span>
+                        <span class="sr-only"></span>
                         <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                             aria-hidden="true" data-slot="icon">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -65,10 +61,10 @@
                                 class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                                 id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                                 <span class="absolute -inset-1.5"></span>
-                                <span class="sr-only">Open user menu</span>
+                                <span class="sr-only"></span>
                                 <img class="size-8 rounded-full"
                                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0f0gLIJLLt5JAKSmrj55q2M1ZJ5XK2BFj4MyOsbFoTtjNkN75rBLwMeMLIFAcgIQg01E&usqp=CAU"
-                                    alt="Imagen de perfil" />
+                                    alt="Luis Pichiyá - 2023396" />
                             </button>
                         </a>
                     </div>
@@ -77,25 +73,20 @@
     </nav>
     <form class="max-w-sm mx-auto mt-6">
         <div class="mb-5">
-            <label for="nombre" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre del
-                pendiente</label>
+            <label for="nombre" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nombre del pendiente</label>
             <input type="nombre" id="nombrePendiente"
-                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
-                required />
+                class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" required />
         </div>
         <div class="mb-5">
-            <label for="number-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ajusta la
-                prioridad</label>
+            <label for="number-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ajusta la  prioridad</label>
             <input type="number" id="prioridadPendiente" aria-describedby="helper-text-explanation"
                 class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 placeholder="0" required />
         </div>
         <button type="submit" id="btnAgregarPendiente" onclick="agregarPendiente()"
-            class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Registrar
-            nuevo pendiente</button>
+            class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Registrar nuevo pendiente</button>
         <button type="submit" id="btnEditarPendiente" onclick="actualizarPendiente()"
-            class="hidden text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Actualizar
-            pendiente</button>
+            class="hidden text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Actualizar pendiente</button>
     </form>
     <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-6">
         <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" id="tablaPendientes">
@@ -110,11 +101,9 @@
                 </tr>
             </thead>
             <tbody>
-
             </tbody>
         </table>
     </div>
     <script type="text/javascript" src="/listaPendientes.js"></script>
 </body>
-
 </html>

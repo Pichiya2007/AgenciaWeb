@@ -1,4 +1,4 @@
-document.getElementById("loginForm").addEventListener("submit", function (event){ //Manejador de eventos para el formulario
+document.getElementById("loginForm").addEventListener("submit", function (event){ //Maneja el evento del formulario
     event.preventDefault(); //Previene el envio del formulario
     recibirDatos(); //Llama a la función para recibir los datos
     location.href = "/contactos.html";
